@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>めーるきゃるむ 利用規約</title>
+<style>
+  :root{
+    --bg:#faf9f7; --surface:#ffffff; --fg:#1d1b17; --muted:#6b6459; --line:#e7e2da;
+    --accent:#2f6f5e; --accent-soft:#e5efec; --font-display:'Zen Old Mincho', serif; --font-body:'Noto Sans JP','Hiragino Sans',system-ui,sans-serif; --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#17191a; --surface:#1f2224; --fg:#eceae6; --muted:#9a948a; --line:#34383a;
+      --accent:#7fb8a4; --accent-soft:#223129; color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:var(--font-body);line-height:1.8;padding:0 16px;padding-block:48px}
+  a{color:var(--accent)}
+  .wrap{max-width:760px;margin:0 auto}
+  header.hero{margin-bottom:40px}
+  .eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:0 0 10px}
+  h1{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,5vw,40px);margin:0 0 8px}
+  .subtitle{color:var(--muted);font-size:15px;margin:0}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .meta strong{color:var(--fg);font-weight:600}
+  nav.toc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:32px 0 48px}
+  nav.toc .eyebrow{margin-bottom:12px}
+  nav.toc ol{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:14px}
+  nav.toc a{text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  section{margin:0 0 40px;scroll-margin-top:20px}
+  section h2{font-family:var(--font-display);font-size:21px;font-weight:600;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:10px}
+  section h2 .num{font-family:var(--font-mono);color:var(--accent);font-size:14px}
+  section p{max-width:65ch;margin:0 0 14px}
+  section ul{max-width:65ch;margin:0 0 14px;padding-left:1.3em;display:grid;gap:8px}
+  section ul li::marker{color:var(--accent)}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:16px 0}
+  .card h3{font-size:14px;margin:0 0 8px;color:var(--accent);font-weight:700}
+  .contact{background:var(--accent-soft);border-radius:10px;padding:22px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+  .contact .label{font-size:13px;color:var(--muted);margin-bottom:4px}
+  .contact .value{font-family:var(--font-mono);font-size:16px;font-weight:600}
+  .lang-divider{display:flex;align-items:center;gap:16px;margin:64px 0 40px;color:var(--muted);font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+  .lang-divider::before,.lang-divider::after{content:"";flex:1;height:1px;background:var(--line)}
+  footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  footer a{color:var(--accent)}
+  @media (max-width:520px){
+    .meta{flex-direction:column;gap:6px}
+    .contact{flex-direction:column;align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Terms of Service / 利用規約</p>
+    <h1>めーるきゃるむ 利用規約</h1>
+    <p class="subtitle">TikTok投稿自動化クライアントのご利用にあたって</p>
+    <div class="meta">
+      <span><strong>運営者</strong>:めーるきゃるむ</span>
+      <span><strong>制定日</strong>:2026年10月16日</span>
+      <span><strong>最終更新日</strong>:2026年10月16日</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="目次">
+    <p class="eyebrow">目次</p>
+    <ol>
+      <li><a href="#acceptance">本規約への同意</a></li>
+      <li><a href="#service">サービス内容</a></li>
+      <li><a href="#eligibility">利用資格</a></li>
+      <li><a href="#responsibilities">利用者の責任</a></li>
+      <li><a href="#prohibited">禁止事項</a></li>
+      <li><a href="#availability">サービスの提供・停止</a></li>
+      <li><a href="#liability">免責事項</a></li>
+      <li><a href="#termination">利用停止・解除</a></li>
+      <li><a href="#law">準拠法</a></li>
+      <li><a href="#changes">本規約の変更</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ol>
+  </nav>
+
+  <section id="acceptance">
+    <h2><span class="num">01</span>本規約への同意</h2>
+    <p>本利用規約(以下「本規約」)は、個人クリエイター「めーるきゃるむ」(以下「運営者」)が提供するTikTok投稿自動化クライアント(以下「本サービス」)の利用条件を定めるものです。本サービスを利用し、TikTokアカウントとの連携を認可することで、利用者は本規約に同意したものとみなされます。</p>
+  </section>
+
+  <section id="service">
+    <h2><span class="num">02</span>サービス内容</h2>
+    <p>本サービスは、TikTok for DevelopersのContent Posting API(Direct Post)を利用し、利用者が認可したTikTokアカウントへ、利用者自身が用意した動画コンテンツを投稿する自動化ツールです。本サービスはワークフロー自動化基盤(Make.com)上で動作します。</p>
+    <div class="card">
+      <h3>現在の運用範囲</h3>
+      <p style="margin:0">現時点では運営者自身のTikTokアカウントでの利用が中心ですが、将来的に他の個人クリエイターが自らの意思でアカウントを連携し、同様の用途で利用範囲が拡張される可能性があります。</p>
+    </div>
+  </section>
+
+  <section id="eligibility">
+    <h2><span class="num">03</span>利用資格</h2>
+    <ul>
+      <li>本サービスを利用するには、有効なTikTokアカウントを保有し、TikTokの利用規約・コミュニティガイドラインを遵守していることが必要です。</li>
+      <li>13歳未満の方は本サービスを利用できません。</li>
+      <li>本サービスとTikTokアカウントを連携する行為は、アカウント所有者本人のみが行えます。</li>
+    </ul>
+  </section>
+
+  <section id="responsibilities">
+    <h2><span class="num">04</span>利用者の責任</h2>
+    <ul>
+      <li>投稿するコンテンツ(動画・キャプション・ハッシュタグ等)の著作権・肖像権その他の権利について、適法に利用する権利を有していることを保証するものとします。</li>
+      <li>投稿内容がTikTokのコミュニティガイドラインおよび適用法令に違反しないようにする責任は、利用者自身が負います。</li>
+      <li>OAuth認可情報(アクセストークン等)の管理について、第三者への漏洩がないよう適切に取り扱うものとします。</li>
+    </ul>
+  </section>
+
+  <section id="prohibited">
+    <h2><span class="num">05</span>禁止事項</h2>
+    <ul>
+      <li>本人の同意を得ていない第三者のTikTokアカウントを操作する行為</li>
+      <li>著作権・肖像権・商標権その他の第三者の権利を侵害するコンテンツを投稿する行為</li>
+      <li>TikTokのコミュニティガイドライン、利用規約、開発者利用規約に違反する行為</li>
+      <li>本サービスの運用を妨害する行為(過度なリクエスト送信、不正アクセス等)</li>
+      <li>法令に違反する行為、または公序良俗に反する行為</li>
+    </ul>
+  </section>
+
+  <section id="availability">
+    <h2><span class="num">06</span>サービスの提供・停止</h2>
+    <p>運営者は、システムの保守、TikTok APIの仕様変更、その他やむを得ない事由により、利用者への事前の通知なく本サービスの全部または一部の提供を停止、または終了することがあります。これにより利用者に生じた損害について、運営者は責任を負いません。</p>
+  </section>
+
+  <section id="liability">
+    <h2><span class="num">07</span>免責事項</h2>
+    <p>本サービスは現状有姿(as-is)で提供されます。運営者は、本サービスの利用により生じた直接的・間接的な損害(投稿の失敗、データの消失、TikTokアカウントの制限・凍結を含むがこれに限らない)について、運営者の故意または重過失による場合を除き、一切の責任を負いません。</p>
+  </section>
+
+  <section id="termination">
+    <h2><span class="num">08</span>利用停止・解除</h2>
+    <p>利用者は、TikTokアプリ内の設定からいつでも本サービスとの連携を解除できます。運営者は、利用者が本規約に違反した場合、事前の通知なく当該利用者による本サービスの利用を停止することができます。</p>
+  </section>
+
+  <section id="law">
+    <h2><span class="num">09</span>準拠法</h2>
+    <p>本規約の解釈にあたっては、日本法を準拠法とします。</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">10</span>本規約の変更</h2>
+    <p>運営者は、必要と判断した場合、利用者への事前の通知なく本規約を変更することができます。変更後の本規約は、本ページに掲載した時点から効力を生じるものとします。変更後も本サービスの利用を継続した場合、変更後の規約に同意したものとみなします。</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span>お問い合わせ</h2>
+    <p>本規約に関するお問い合わせは、以下の連絡先までご連絡ください。</p>
+    <div class="contact">
+      <div>
+        <div class="label">お問い合わせ先メールアドレス</div>
+        <div class="value">mercalme2020@gmail.com</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lang-divider">English Version</div>
+
+  <section id="acceptance-en">
+    <h2><span class="num">01</span>Acceptance of Terms</h2>
+    <p>These Terms of Service ("Terms") govern the use of a TikTok posting-automation client ("the Service") provided by the individual creator "Mer Calme" ("we", "the Operator"). By using the Service and authorizing it to connect to a TikTok account, you agree to these Terms.</p>
+  </section>
+
+  <section id="service-en">
+    <h2><span class="num">02</span>Description of Service</h2>
+    <p>The Service uses the TikTok for Developers Content Posting API (Direct Post) to publish video content that the user has prepared to a TikTok account the user has authorized. The Service runs on the Make.com workflow-automation platform.</p>
+    <div class="card">
+      <h3>Current Scope</h3>
+      <p style="margin:0">At present the Service is primarily used for the Operator's own TikTok account. Its scope may expand in the future so that other individual creators can connect their own accounts for the same purpose, at their own discretion.</p>
+    </div>
+  </section>
+
+  <section id="eligibility-en">
+    <h2><span class="num">03</span>Eligibility</h2>
+    <ul>
+      <li>You must hold a valid TikTok account and comply with TikTok's Terms of Service and Community Guidelines to use the Service.</li>
+      <li>Users under the age of 13 may not use the Service.</li>
+      <li>Only the owner of a TikTok account may authorize that account to connect to the Service.</li>
+    </ul>
+  </section>
+
+  <section id="responsibilities-en">
+    <h2><span class="num">04</span>User Responsibilities</h2>
+    <ul>
+      <li>You represent that you hold all necessary rights (copyright, likeness rights, and otherwise) to lawfully use any content (video, captions, hashtags, etc.) you publish through the Service.</li>
+      <li>You are solely responsible for ensuring that your posted content complies with TikTok's Community Guidelines and applicable law.</li>
+      <li>You are responsible for safeguarding your OAuth authorization credentials (such as access tokens) from unauthorized disclosure.</li>
+    </ul>
+  </section>
+
+  <section id="prohibited-en">
+    <h2><span class="num">05</span>Prohibited Uses</h2>
+    <ul>
+      <li>Operating a third party's TikTok account without that person's consent</li>
+      <li>Publishing content that infringes copyright, likeness rights, trademark rights, or other third-party rights</li>
+      <li>Violating TikTok's Community Guidelines, Terms of Service, or Developer Terms of Service</li>
+      <li>Interfering with the operation of the Service (excessive requests, unauthorized access, etc.)</li>
+      <li>Any unlawful act or act contrary to public order and morals</li>
+    </ul>
+  </section>
+
+  <section id="availability-en">
+    <h2><span class="num">06</span>Availability of the Service</h2>
+    <p>We may suspend or discontinue all or part of the Service at any time, without prior notice, for maintenance, changes to the TikTok API, or other unavoidable reasons. We are not liable for any damage this causes to users.</p>
+  </section>
+
+  <section id="liability-en">
+    <h2><span class="num">07</span>Disclaimer</h2>
+    <p>The Service is provided "as is." Except in cases of our willful misconduct or gross negligence, we are not liable for any direct or indirect damages arising from use of the Service, including but not limited to failed posts, data loss, or restriction or suspension of a TikTok account.</p>
+  </section>
+
+  <section id="termination-en">
+    <h2><span class="num">08</span>Suspension and Termination</h2>
+    <p>You may disconnect the Service from your TikTok account at any time from within the TikTok app's settings. We may suspend a user's access to the Service without prior notice if that user violates these Terms.</p>
+  </section>
+
+  <section id="law-en">
+    <h2><span class="num">09</span>Governing Law</h2>
+    <p>These Terms are governed by the laws of Japan.</p>
+  </section>
+
+  <section id="changes-en">
+    <h2><span class="num">10</span>Changes to These Terms</h2>
+    <p>We may change these Terms without prior notice when we consider it necessary. Revised Terms take effect from the time they are posted on this page. Continued use of the Service after a change constitutes acceptance of the revised Terms.</p>
+  </section>
+
+  <section id="contact-en">
+    <h2><span class="num">11</span>Contact</h2>
+    <p>For questions about these Terms, please contact us at:</p>
+    <div class="contact">
+      <div>
+        <div class="label">Contact email</div>
+        <div class="value">mercalme2020@gmail.com</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 めーるきゃるむ (Mer Calme). All rights reserved. &middot; <a href="./index.html">Home</a> &middot; <a href="./privacy.html">Privacy Policy</a></p>
+  </footer>
+</div>
+</body>
+</html>

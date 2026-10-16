@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>めーるきゃるむ プライバシーポリシー</title>
+<style>
+  :root{
+    --bg:#faf9f7; --surface:#ffffff; --fg:#1d1b17; --muted:#6b6459; --line:#e7e2da;
+    --accent:#2f6f5e; --accent-soft:#e5efec; --font-display:'Zen Old Mincho', serif; --font-body:'Noto Sans JP','Hiragino Sans',system-ui,sans-serif; --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#17191a; --surface:#1f2224; --fg:#eceae6; --muted:#9a948a; --line:#34383a;
+      --accent:#7fb8a4; --accent-soft:#223129; color-scheme:dark;
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:var(--font-body);line-height:1.8;padding:0 16px;padding-block:48px}
+  a{color:var(--accent)}
+  .wrap{max-width:760px;margin:0 auto}
+  header.hero{margin-bottom:40px}
+  .eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin:0 0 10px}
+  h1{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,5vw,40px);margin:0 0 8px}
+  .subtitle{color:var(--muted);font-size:15px;margin:0}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .meta strong{color:var(--fg);font-weight:600}
+  nav.toc{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:32px 0 48px}
+  nav.toc .eyebrow{margin-bottom:12px}
+  nav.toc ol{margin:0;padding-left:1.2em;display:grid;gap:6px;font-size:14px}
+  nav.toc a{text-decoration:none}
+  nav.toc a:hover{text-decoration:underline}
+  section{margin:0 0 40px;scroll-margin-top:20px}
+  section h2{font-family:var(--font-display);font-size:21px;font-weight:600;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:10px}
+  section h2 .num{font-family:var(--font-mono);color:var(--accent);font-size:14px}
+  section p{max-width:65ch;margin:0 0 14px}
+  section ul{max-width:65ch;margin:0 0 14px;padding-left:1.3em;display:grid;gap:8px}
+  section ul li::marker{color:var(--accent)}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:16px 0}
+  .card h3{font-size:14px;margin:0 0 8px;color:var(--accent);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+  table caption{text-align:left;font-size:12px;color:var(--muted);margin-bottom:8px}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--font-mono);font-weight:600;font-size:12px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+  .contact{background:var(--accent-soft);border-radius:10px;padding:22px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+  .contact .label{font-size:13px;color:var(--muted);margin-bottom:4px}
+  .contact .value{font-family:var(--font-mono);font-size:16px;font-weight:600}
+  .lang-divider{display:flex;align-items:center;gap:16px;margin:64px 0 40px;color:var(--muted);font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+  .lang-divider::before,.lang-divider::after{content:"";flex:1;height:1px;background:var(--line)}
+  footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  footer a{color:var(--accent)}
+  @media (max-width:520px){
+    .meta{flex-direction:column;gap:6px}
+    .contact{flex-direction:column;align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Privacy Policy / プライバシーポリシー</p>
+    <h1>めーるきゃるむ プライバシーポリシー</h1>
+    <p class="subtitle">TikTok投稿自動化クライアントにおける個人情報の取り扱いについて</p>
+    <div class="meta">
+      <span><strong>運営者</strong>:めーるきゃるむ</span>
+      <span><strong>制定日</strong>:2026年10月16日</span>
+      <span><strong>最終更新日</strong>:2026年10月16日</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="目次">
+    <p class="eyebrow">目次</p>
+    <ol>
+      <li><a href="#overview">本サービスについて</a></li>
+      <li><a href="#data-collected">取得する情報</a></li>
+      <li><a href="#purpose">利用目的</a></li>
+      <li><a href="#third-party">第三者への提供・委託先</a></li>
+      <li><a href="#retention">保存期間</a></li>
+      <li><a href="#rights">ユーザーの権利(アクセス・削除・認可の取り消し)</a></li>
+      <li><a href="#security">セキュリティ対策</a></li>
+      <li><a href="#tiktok-compliance">TikTokプラットフォームとの関係</a></li>
+      <li><a href="#children">児童のプライバシー</a></li>
+      <li><a href="#changes">本ポリシーの変更</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">01</span>本サービスについて</h2>
+    <p>本プライバシーポリシーは、個人クリエイター「めーるきゃるむ」(以下「運営者」)が、TikTok Content Posting APIを利用して、運営者自身および運営者が明示的に認可を得たTikTokアカウントへ動画コンテンツを自動投稿するために開発・運用するクライアント(以下「本サービス」)における、個人情報および利用者情報の取り扱いについて定めるものです。</p>
+    <p>本サービスは、ワークフロー自動化基盤(Make.com)を介してTikTok for DevelopersのContent Posting API(Direct Post)を呼び出し、TikTokアカウント所有者本人が作成・承認した動画を、本人が認可した本人のTikTokアカウントへ投稿する用途に限定して利用されます。第三者が作成したコンテンツを無断で投稿する機能、または認可を得ていないアカウントを操作する機能は一切含まれません。</p>
+    <div class="card">
+      <h3>現在の運用範囲</h3>
+      <p style="margin:0">現時点では運営者自身のTikTokアカウントでの利用を主としていますが、将来的に他の個人クリエイターが自らの意思でTikTokアカウントを連携し、同様に自身のコンテンツを投稿する用途へ利用範囲を拡張する可能性があります。その場合も、認可したアカウント本人のコンテンツを、本人の指示に基づいて投稿する用途に限定されます。</p>
+    </div>
+  </section>
+
+  <section id="data-collected">
+    <h2><span class="num">02</span>取得する情報</h2>
+    <p>本サービスは、TikTok Login KitによるOAuth認可を通じて、以下の情報を取得します。</p>
+    <table>
+      <caption>取得する情報の一覧</caption>
+      <thead>
+        <tr><th>区分</th><th>内容</th><th>取得元</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>認可情報</td><td>OAuthアクセストークン・リフレッシュトークン</td><td>TikTok Login Kit(ユーザー本人の認可操作)</td></tr>
+        <tr><td>アカウント識別情報</td><td>TikTokユーザーID、表示名、プロフィール画像URL</td><td>TikTok Display API(投稿先アカウントの確認・表示用)</td></tr>
+        <tr><td>投稿コンテンツ</td><td>利用者が自ら用意した動画ファイル、キャプション、ハッシュタグ、公開範囲設定</td><td>利用者本人の入力</td></tr>
+        <tr><td>投稿結果</td><td>投稿ID、公開ステータス、処理結果(成功/失敗)</td><td>TikTok Content Posting API のレスポンス</td></tr>
+      </tbody>
+    </table>
+    <p>上記以外の情報(閲覧履歴、フォロー・フォロワー一覧、ダイレクトメッセージ、他ユーザーの投稿データなど)は取得しません。</p>
+  </section>
+
+  <section id="purpose">
+    <h2><span class="num">03</span>利用目的</h2>
+    <ul>
+      <li>認可を受けたTikTokアカウントへ、利用者本人が用意した動画コンテンツを投稿するため</li>
+      <li>投稿処理の成功・失敗を確認し、利用者へ結果を伝えるため</li>
+      <li>複数アカウントを扱う場合に、投稿先アカウントを正しく識別するため</li>
+      <li>不正利用やAPI利用規約違反を防止するため</li>
+    </ul>
+    <p>取得した情報を、広告配信・マーケティング・プロファイリング・第三者への販売目的で利用することは一切ありません。</p>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="num">04</span>第三者への提供・委託先</h2>
+    <p>本サービスの技術的な運用のため、以下の外部サービスを処理委託先として利用しています。これらの委託先は、投稿処理を技術的に仲介する目的以外でデータを利用しません。</p>
+    <div class="card">
+      <h3>Make(Make.com / Celonis s.r.o.)</h3>
+      <p style="margin:0">動画データ・投稿内容をTikTok APIへ中継するワークフロー自動化基盤として利用。</p>
+    </div>
+    <div class="card">
+      <h3>Cloudinary, Inc.</h3>
+      <p style="margin:0">投稿前の動画ファイルを一時的にホスティングするために利用。投稿完了後、一定期間内に削除します。</p>
+    </div>
+    <p>上記委託先以外の第三者へ、利用者の個人を特定できる情報を、法令に基づく場合を除き、本人の同意なく提供することはありません。</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">05</span>保存期間</h2>
+    <ul>
+      <li><strong>OAuthトークン</strong>:利用者が認可を維持している間保存します。利用者がTikTok側の設定、または運営者への連絡によって認可を取り消した場合、30日以内に削除します。</li>
+      <li><strong>動画ファイル(一時保存分)</strong>:投稿処理の完了後、7日以内に委託先ストレージから削除します。</li>
+      <li><strong>投稿結果ログ</strong>:不具合対応・利用状況確認のため、最長90日間保存した後、削除します。</li>
+    </ul>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">06</span>ユーザーの権利(アクセス・削除・認可の取り消し)</h2>
+    <p>利用者は、いつでも以下の権利を行使できます。</p>
+    <ul>
+      <li><strong>認可の取り消し</strong>:TikTokアプリ内の「設定とプライバシー」→「セキュリティ」→「アプリとウェブサイトの権限」から、本サービスへの連携をいつでも解除できます。</li>
+      <li><strong>保有データの開示請求</strong>:下記の連絡先まで連絡いただければ、運営者が保有する当該利用者のデータを開示します。</li>
+      <li><strong>データの削除請求</strong>:下記の連絡先まで連絡いただければ、合理的な期間内に該当データを削除します。</li>
+    </ul>
+  </section>
+
+  <section id="security">
+    <h2><span class="num">07</span>セキュリティ対策</h2>
+    <ul>
+      <li>TikTok APIとの通信はすべてHTTPS(TLS)によって暗号化されています。</li>
+      <li>OAuthトークンは、委託先プラットフォーム(Make.com)の認証情報管理機能内で暗号化保存され、運営者を含む権限のない第三者がアクセスできない状態で管理されています。</li>
+      <li>本サービスへのアクセス・設定変更は運営者本人のみが行います。</li>
+    </ul>
+  </section>
+
+  <section id="tiktok-compliance">
+    <h2><span class="num">08</span>TikTokプラットフォームとの関係</h2>
+    <p>本サービスは、TikTok Developer Terms of ServiceおよびDeveloper Data Sharing Agreementを遵守して運用されます。具体的には以下を含みます。</p>
+    <ul>
+      <li>利用者本人の明示的な同意なく、TikTokから取得したデータを第三者と共有しません。</li>
+      <li>クリエイターの著作権保護機能(電子透かし等)を、同意なく削除・改変しません。</li>
+      <li>利用者の身元・匿名性を保護し、不正確または誤解を招く説明を行いません。</li>
+      <li>TikTokからセキュリティ・プライバシー・コンプライアンスに関する連絡を受けた場合、速やかに対応します。</li>
+    </ul>
+    <p>本サービスは、TikTok, Inc.またはByteDance Ltd.によって運営・承認・提携されたものではありません。「TikTok」はByteDance Ltd.の商標です。</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">09</span>児童のプライバシー</h2>
+    <p>本サービスは、13歳未満の児童を対象としたものではなく、児童から意図的に個人情報を取得することはありません。児童の個人情報を取得したことが判明した場合、速やかに削除します。</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">10</span>本ポリシーの変更</h2>
+    <p>本ポリシーの内容は、法令改正やサービス内容の変更に応じて更新される場合があります。重要な変更がある場合は、本ページ上の「最終更新日」を更新してお知らせします。変更後も本サービスの利用を継続した場合、変更後のポリシーに同意したものとみなします。</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span>お問い合わせ</h2>
+    <p>本ポリシーに関するご質問、データの開示・削除請求、その他のお問い合わせは、以下の連絡先までご連絡ください。</p>
+    <div class="contact">
+      <div>
+        <div class="label">お問い合わせ先メールアドレス</div>
+        <div class="value">mercalme2020@gmail.com</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lang-divider">English Version</div>
+
+  <section id="overview-en">
+    <h2><span class="num">01</span>About This Service</h2>
+    <p>This Privacy Policy describes how the individual creator "Mer Calme" ("we", "the Operator") handles personal and user information in connection with a client application ("the Service") that uses the TikTok Content Posting API to automatically publish video content to the Operator's own TikTok account and to any TikTok account whose owner has explicitly authorized the Service.</p>
+    <p>The Service calls TikTok for Developers' Content Posting API (Direct Post) through the Make.com workflow-automation platform, and is used exclusively to publish videos that the TikTok account owner has created and approved, to that same person's authorized TikTok account. The Service does not post content created by third parties without authorization, and does not operate any account that has not granted authorization.</p>
+    <div class="card">
+      <h3>Current Scope</h3>
+      <p style="margin:0">At present the Service is primarily used for the Operator's own TikTok account. In the future, its scope may expand so that other individual creators can connect their own TikTok accounts at their own discretion, for the same purpose of publishing their own content. In every case, use remains limited to publishing the authorized account owner's own content at that owner's direction.</p>
+    </div>
+  </section>
+
+  <section id="data-collected-en">
+    <h2><span class="num">02</span>Information We Collect</h2>
+    <p>Through OAuth authorization via TikTok Login Kit, the Service collects the following information.</p>
+    <table>
+      <caption>Information collected</caption>
+      <thead><tr><th>Category</th><th>Details</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Authorization data</td><td>OAuth access token and refresh token</td><td>TikTok Login Kit (user-initiated authorization)</td></tr>
+        <tr><td>Account identifiers</td><td>TikTok user ID, display name, profile picture URL</td><td>TikTok Display API (to confirm and show the connected account)</td></tr>
+        <tr><td>Post content</td><td>Video files, captions, hashtags and privacy settings the user supplies</td><td>Entered by the user</td></tr>
+        <tr><td>Post results</td><td>Post ID, publish status, success/failure result</td><td>Response from the TikTok Content Posting API</td></tr>
+      </tbody>
+    </table>
+    <p>We do not collect any other data, including browsing history, follower/following lists, direct messages, or other users' posts.</p>
+  </section>
+
+  <section id="purpose-en">
+    <h2><span class="num">03</span>Purpose of Use</h2>
+    <ul>
+      <li>To publish video content the user has prepared to their authorized TikTok account</li>
+      <li>To confirm whether a post succeeded or failed and report the result to the user</li>
+      <li>To correctly identify the target account when multiple accounts are connected</li>
+      <li>To prevent misuse and violations of API terms</li>
+    </ul>
+    <p>We never use collected information for advertising, marketing, profiling, or sale to third parties.</p>
+  </section>
+
+  <section id="third-party-en">
+    <h2><span class="num">04</span>Third-Party Processors</h2>
+    <p>We use the following third-party processors solely to operate the Service technically. These processors do not use the data for any purpose other than relaying the post.</p>
+    <div class="card">
+      <h3>Make (Make.com / Celonis s.r.o.)</h3>
+      <p style="margin:0">Used as the workflow-automation platform that relays video data and post content to the TikTok API.</p>
+    </div>
+    <div class="card">
+      <h3>Cloudinary, Inc.</h3>
+      <p style="margin:0">Used to temporarily host video files before posting. Files are deleted within a set period after the post completes.</p>
+    </div>
+    <p>We do not share personally identifiable information with any third party beyond the processors listed above, except where required by law or with the user's consent.</p>
+  </section>
+
+  <section id="retention-en">
+    <h2><span class="num">05</span>Data Retention</h2>
+    <ul>
+      <li><strong>OAuth tokens:</strong> Retained while the user's authorization remains active. If the user revokes authorization (via TikTok settings or by contacting us), tokens are deleted within 30 days.</li>
+      <li><strong>Temporarily hosted video files:</strong> Deleted from processor storage within 7 days after the post completes.</li>
+      <li><strong>Post result logs:</strong> Retained for up to 90 days for troubleshooting and usage review, then deleted.</li>
+    </ul>
+  </section>
+
+  <section id="rights-en">
+    <h2><span class="num">06</span>Your Rights</h2>
+    <ul>
+      <li><strong>Revoke authorization:</strong> At any time, from the TikTok app under Settings and Privacy → Security → Apps and websites permissions.</li>
+      <li><strong>Request access:</strong> Contact us at the address below and we will disclose the data we hold about you.</li>
+      <li><strong>Request deletion:</strong> Contact us at the address below and we will delete the relevant data within a reasonable period.</li>
+    </ul>
+  </section>
+
+  <section id="security-en">
+    <h2><span class="num">07</span>Security Measures</h2>
+    <ul>
+      <li>All communication with the TikTok API is encrypted via HTTPS (TLS).</li>
+      <li>OAuth tokens are stored encrypted within Make.com's credential-management system and are not accessible to unauthorized third parties, including the Operator.</li>
+      <li>Only the Operator may access or change the Service's configuration.</li>
+    </ul>
+  </section>
+
+  <section id="tiktok-compliance-en">
+    <h2><span class="num">08</span>Relationship to the TikTok Platform</h2>
+    <p>The Service is operated in compliance with the TikTok Developer Terms of Service and the Developer Data Sharing Agreement, including that we:</p>
+    <ul>
+      <li>do not share data obtained from TikTok with third parties without the user's explicit consent;</li>
+      <li>do not remove or alter creators' copyright-protection features (such as watermarks) without consent;</li>
+      <li>protect users' identity and anonymity, and do not provide inaccurate or misleading descriptions;</li>
+      <li>respond promptly to any security, privacy, or compliance communication from TikTok.</li>
+    </ul>
+    <p>This Service is not operated, endorsed by, or affiliated with TikTok, Inc. or ByteDance Ltd. "TikTok" is a trademark of ByteDance Ltd.</p>
+  </section>
+
+  <section id="children-en">
+    <h2><span class="num">09</span>Children's Privacy</h2>
+    <p>The Service is not directed at children under the age of 13, and we do not knowingly collect personal information from children. If we learn that we have collected a child's personal information, we will delete it promptly.</p>
+  </section>
+
+  <section id="changes-en">
+    <h2><span class="num">10</span>Changes to This Policy</h2>
+    <p>This Policy may be updated to reflect changes in law or in the Service. Material changes will be reflected by updating the "Last Updated" date on this page. Continued use of the Service after a change constitutes acceptance of the updated Policy.</p>
+  </section>
+
+  <section id="contact-en">
+    <h2><span class="num">11</span>Contact</h2>
+    <p>For questions about this Policy, or to request access to or deletion of your data, please contact us at:</p>
+    <div class="contact">
+      <div>
+        <div class="label">Contact email</div>
+        <div class="value">mercalme2020@gmail.com</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 めーるきゃるむ (Mer Calme). All rights reserved. &middot; <a href="./index.html">Home</a> &middot; <a href="./terms.html">Terms of Service</a></p>
+  </footer>
+</div>
+</body>
+</html>

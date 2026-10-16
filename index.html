@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>めーるきゃるむ</title>
+<style>
+  :root{
+    --bg:#faf9f7; --surface:#ffffff; --fg:#1d1b17; --muted:#6b6459; --line:#e7e2da;
+    --accent:#2f6f5e; --accent-soft:#e5efec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#17191a; --surface:#1f2224; --fg:#eceae6; --muted:#9a948a; --line:#34383a; --accent:#7fb8a4; --accent-soft:#223129; color-scheme:dark; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg);color:var(--fg);font-family:'Hiragino Sans','Noto Sans JP',system-ui,sans-serif;line-height:1.8;padding:48px 16px}
+  a{color:var(--accent)}
+  .wrap{max-width:640px;margin:0 auto}
+  h1{font-size:clamp(28px,6vw,40px);margin:0 0 12px}
+  p.lead{color:var(--muted);font-size:16px;margin:0 0 32px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;margin:0 0 16px}
+  .card h2{font-size:15px;margin:0 0 8px;color:var(--accent)}
+  .card p{margin:0;font-size:14px;color:var(--muted)}
+  nav.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+  nav.links a{font-size:14px;text-decoration:none;font-weight:600}
+  nav.links a:hover{text-decoration:underline}
+  footer{margin-top:48px;font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>めーるきゃるむ</h1>
+  <p class="lead">個人クリエイターとして、AIを活用したオリジナル楽曲・動画コンテンツを制作・発信しています。</p>
+
+  <div class="card">
+    <h2>About</h2>
+    <p>めーるきゃるむは、オリジナル楽曲の制作とAIによる映像制作を行う個人クリエイターです。自作コンテンツをYouTube・Instagram・TikTokなどで公開しています。本サイトは、各種プラットフォーム向けAPI連携(TikTok Content Posting API等)に必要な公式情報を掲載しています。</p>
+  </div>
+
+  <nav class="links">
+    <a href="./privacy.html">プライバシーポリシー</a>
+    <a href="./terms.html">利用規約</a>
+    <a href="mailto:mercalme2020@gmail.com">お問い合わせ</a>
+  </nav>
+
+  <footer>
+    <p>&copy; 2026 めーるきゃるむ (Mer Calme)</p>
+  </footer>
+</div>
+</body>
+</html>
